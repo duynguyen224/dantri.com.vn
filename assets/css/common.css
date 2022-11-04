@@ -1,0 +1,135 @@
+:root {
+    --color-title: #222;
+    --text-link-hover-color: #007aff;
+    --border-color: #ccc;
+    --text-blur-color: #666;
+    --color-green-dan-tri: #0f6c32;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    word-wrap: break-word;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.sub-article-title {
+    color: var(--color-title);
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+}
+.sub-article-title:hover {
+    color: var(--text-link-hover-color);
+}
+
+.middle-article-title {
+    color: var(--color-title);
+    font-size: 1.8rem;
+    line-height: 34px;
+    font-weight: 600;
+}
+.middle-article-title:hover {
+    color: var(--text-link-hover-color);
+}
+.text-blur-color {
+    color: var(--text-blur-color);
+}
+
+.horizontal-divider {
+    border-top: 1px solid var(--border-color);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.vertical-divider {
+    border-right: 1px solid var(--border-color);
+}
+.text-small {
+    font-size: 13px;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+@media (min-width: 320px) {
+    /* smartphones, iPhone, portrait 480x320 phones */
+    .container {
+        width: 100%;
+        margin: auto;
+        padding: 0px 1rem 0px 1rem;
+    }
+    .container-fluid {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    .container {
+        width: 540px;
+        margin: auto;
+    }
+    .container-fluid {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    .container {
+        width: 720px;
+        margin: auto;
+    }
+    .container-fluid {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .container {
+        width: 960px;
+        margin: auto;
+    }
+    .container-fluid {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* big landscape tablets, laptops, and desktops */
+    .container {
+        width: 1140px;
+        margin: auto;
+    }
+    .container-fluid {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1400px) {
+    /* hi-res laptops and desktops */
+    .container {
+        width: 1320px;
+        margin: auto;
+    }
+    .container-fluid {
+        width: 100%;
+        margin: auto;
+    }
+}
