@@ -1,0 +1,213 @@
+:root {
+    --text-blur-color: #a0a4a8;
+    --color-green-dan-tri: #1a7900;
+    --color-audio-background: #f1f5f9;
+}
+
+.detail-container {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.left-page-detail {
+    width: 5%;
+}
+
+.center-page-detail {
+    width: 70%;
+}
+
+.right-page-detail {
+    width: 25%;
+}
+
+.center-page-detail .category-name {
+    text-transform: uppercase;
+    color: var(--text-blur-color);
+}
+
+.article-content .article-title {
+    font-weight: 600;
+    font-size: 2.8rem;
+}
+
+/* link icon */
+.left-page-detail {
+}
+.icon-container {
+    position: sticky;
+    top: 4rem;
+}
+.left-page-detail .link-icon {
+}
+.left-page-detail .link-icon i {
+    color: var(--text-blur-color);
+    padding-bottom: 1rem;
+    font-size: 2.2rem;
+}
+.icon-facebook:hover i {
+    color: #2962af;
+}
+.icon-share:hover i {
+    color: rgb(116, 204, 226);
+}
+.icon-print {
+    padding-bottom: 2rem;
+}
+.icon-print:hover i {
+    color: rgb(182, 152, 124);
+}
+.icon-comment a {
+    border-top: 1px solid #ccc;
+    padding-top: 2rem;
+}
+
+/* end of link icon */
+
+/* article-author */
+.article-author {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.article-author .author-avatar {
+    border-radius: 50%;
+    width: 2.6rem;
+}
+.article-author .writer-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.article-author .created-date {
+    color: var(--text-blur-color);
+}
+/* end article-author */
+
+/* article-audio */
+.article-audio {
+    background-color: var(--color-audio-background);
+    border-radius: 4rem;
+}
+.article-audio-container {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.article-audio .play-button {
+    background-color: var(--color-green-dan-tri);
+    padding: 0.5rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    position: relative;
+}
+
+.article-audio .play-button i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.article-audio-container .audio-control {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: fit-content;
+}
+.article-audio-container .audio-track-bar {
+    width: 60%;
+    border-top: 4px solid #ccc;
+}
+.article-audio-container .audio-voice {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: fit-content;
+}
+/* end of article-audio */
+
+/* main article content */
+.article-preview-content {
+    margin-top: 1rem;
+}
+.article-preview-content p {
+    font-size: 1.4rem;
+    font-style: italic;
+    padding-bottom: 2.2rem;
+}
+
+.article-main-content p {
+    font-size: 1.4rem;
+    padding-bottom: 1.4rem;
+}
+/* end of main article content */
+
+/* right article detail */
+.right-page-detail {
+    margin-left: 2rem;
+    border-top: 2px solid #ccc;
+    padding-top: 1rem;
+}
+
+.right-page-detail .most-read {
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+.right-page-detail .most-read span {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.title-section.title-section-most-read {
+    display: flex;
+    gap: 0.5rem;
+}
+.number-order {
+    color: var(--text-blur-color);
+    font-size: 1.2rem;
+}
+/* end of right article detail */
+
+/* reaction */
+.article-reaction {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.article-reaction .reaction-avatar {
+    border-radius: 50%;
+    width: 2.6rem;
+}
+.article-reaction .reaction-given {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.article-reaction .reaction-emoji span{
+    padding: 0.5rem;
+    background-color: rgb(240, 240, 240);
+    border-radius: 30px;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+.given-for-author{
+    box-shadow: 3px 3px 3px #e7e7e7;
+    width: fit-content;
+    border-radius: 1rem;
+    border: 1px solid var(--text-blur-color);
+}
+.given-for-author .box{
+    padding: 0.8rem;
+}
+/* end of reaction */

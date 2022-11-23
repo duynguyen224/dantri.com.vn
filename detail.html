@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- common.css -->
+    <link rel="stylesheet" href="./assets/css/common.css">
+
+    <!-- index.css -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/detail.css">
+
+    <title>Tin tức Việt Nam và quốc tế nóng, nhanh, cập nhât 24h</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <a href="index.html">
+                    <img style="width: 100%;"
+                        src="https://cdnweb.dantri.com.vn/dist/static-logo.1-0-1.329fb29fe0ea34cca545.svg" alt="">
+                </a>
+            </div>
+            <div class="header-right">
+                <a href="#" class="international">
+                    <img src="https://cdnweb.dantri.com.vn/dist/static-avatar-default.1-0-1.b474c6ca2d1abee5b89b.png"
+                        alt="">
+                    <span>International Version</span>
+                </a>
+                <div class="location">
+                    <span class="location-name">Hà Nội</span>
+                    <span class="weekdays text-small">Thứ 5, 03/11/2022</span>
+                </div>
+                <div class="weather">
+                    <img src="https://cdnweb.dantri.com.vn/dist/3ab90e2ad8f9a0ada5be.svg" alt="">
+                    <span>25°C</span>
+                </div>
+                <div class="divider"></div>
+                <div class="login">
+                    <a href="#"><span>Đăng nhập</span><i class="fa-regular fa-user" style="margin-left: 4px;"></i></a>
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-header-container">
+            <div class="header-category">
+                <ul class="list-category">
+                    <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+                    <li class="category-item">
+                        <a href="#">Video</a>
+                        <!-- category popup -->
+                        <div class="category-popup">
+                            <span class="up-arrow"><i class="fa-solid fa-caret-up"></i></span>
+                            <ul class="list-category-popup">
+                                <li><span class="minus"><i class="fa-solid fa-minus"></i></span> Tài chính</li>
+                                <li><span class="minus"><i class="fa-solid fa-minus"></i></span> Chứng khoán</li>
+                                <li><span class="minus"><i class="fa-solid fa-minus"></i></span> Doanh nghiệp</li>
+                                <li><span class="minus"><i class="fa-solid fa-minus"></i></span> Khởi nghiệp</li>
+                                <li><span class="minus"><i class="fa-solid fa-minus"></i></span> Tiêu dùng</li>
+                                <li><span class="minus"><i class="fa-solid fa-minus"></i></span> Thanh toán thông minh
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end category popup -->
+                    </li>
+                    <li class="category-item">
+                        <a href="#">Sự kiện</a>
+                        <!-- category popup -->
+                        <div class="category-popup">
+                            <span class="up-arrow"><i class="fa-solid fa-caret-up"></i></span>
+                            <ul class="list-category-popup">
+                                <li><span class="minus"><i class="fa-solid fa-minus"></i></span> Quân sự</li>
+                                <li><span class="minus"><i class="fa-solid fa-minus"></i></span> Hồ sơ phân tích </li>
+                                <li><span class="minus"><i class="fa-solid fa-minus"></i></span> Thế giới đó đây</li>
+                                <li><span class="minus"><i class="fa-solid fa-minus"></i></span> Kiều bào</li>
+                                <li><span class="minus"><i class="fa-solid fa-minus"></i></span> Căng thẳng Nga -
+                                    Ukraine</li>
+                        </div>
+                    </li>
+                    <li class="category-item"><a href="#">Xã hội</a></li>
+                    <li class="category-item"><a href="#">Thế giới</a></li>
+                    <li class="category-item"><a href="#">Kinh doanh</a></li>
+                    <li class="category-item"><a href="#">Bất động sản</a></li>
+                    <li class="category-item"><a href="#">Thể thao</a></li>
+                    <li class="category-item"><a href="#">Việc làm</a></li>
+                    <li class="category-item"><a href="#">Nhân ái</a></li>
+                    <li class="category-item"><a href="#">Sức khỏe</a></li>
+                    <li class="category-item"><a href="#">Văn hóa</a></li>
+                    <li class="category-item"><a href="#">Giải trí</a></li>
+                    <li class="category-item"><a href="#">Giải trí</a></li>
+                    <li class="category-item"><a href="#">Giải trí</a></li>
+                    <li class="category-item"><a href="#">Giải trí</a></li>
+                    <li class="category-item"><a href="#">Giải trí</a></li>
+                    <li class="category-item"><a href="#">Giải trí</a></li>
+                    <li class="category-item"><a href="#">Giải trí</a></li>
+                    <li class="three-dots">• • •</li>
+                    <li class="btn-close-category" style="display: none;"><i style="font-size: 1.4rem; color: #0f6c32;"
+                            class="fa-regular fa-circle-xmark"></i></li>
+                </ul>
+                <div class="category-line"></div>
+            </div>
+        </div>
+
+        <!-- pop up all category and sub category -->
+        <div class="all-category" style="display: none;">
+            <div class="all-category-left-section">
+                <ul class="group-category-sub-category">
+                    <li class="category-title"><a href="#" class="text-uppercase">Xã hội</a></li>
+                    <li class="sub-category"><a href="#">Chỉnh trị</a></li>
+                    <li><a href="#">Học tập Bác</a></li>
+                    <li><a href="#">Môi trường</a></li>
+                    <li><a href="#">Giao thông</a></li>
+                    <li><a href="#">Nóng trên mạng</a></li>
+                    <li><a href="#">Sáng kiến an toàn giao thông</a></li>
+                </ul>
+                <ul class="group-category-sub-category">
+                    <li class="category-title"><a href="#" class="text-uppercase">Xã hội</a></li>
+                    <li class="sub-category"><a href="#">Chỉnh trị</a></li>
+                    <li><a href="#">Học tập Bác</a></li>
+                    <li><a href="#">Môi trường</a></li>
+                    <li><a href="#">Giao thông</a></li>
+                    <li><a href="#">Nóng trên mạng</a></li>
+                    <li><a href="#">Sáng kiến an toàn giao thông</a></li>
+                </ul>
+                <ul class="group-category-sub-category">
+                    <li class="category-title"><a href="#" class="text-uppercase">Xã hội</a></li>
+                    <li class="sub-category"><a href="#">Chỉnh trị</a></li>
+                    <li><a href="#">Học tập Bác</a></li>
+                    <li><a href="#">Môi trường</a></li>
+                    <li><a href="#">Giao thông</a></li>
+                    <li><a href="#">Nóng trên mạng</a></li>
+                    <li><a href="#">Sáng kiến an toàn giao thông</a></li>
+                </ul>
+                <ul class="group-category-sub-category">
+                    <li class="category-title"><a href="#" class="text-uppercase">Xã hội</a></li>
+                    <li class="sub-category"><a href="#">Chỉnh trị</a></li>
+                    <li><a href="#">Học tập Bác</a></li>
+                    <li><a href="#">Môi trường</a></li>
+                    <li><a href="#">Giao thông</a></li>
+                    <li><a href="#">Nóng trên mạng</a></li>
+                    <li><a href="#">Sáng kiến an toàn giao thông</a></li>
+                </ul>
+                <ul class="group-category-sub-category">
+                    <li class="category-title"><a href="#" class="text-uppercase">Xã hội</a></li>
+                    <li class="sub-category"><a href="#">Chỉnh trị</a></li>
+                    <li><a href="#">Học tập Bác</a></li>
+                    <li><a href="#">Môi trường</a></li>
+                    <li><a href="#">Giao thông</a></li>
+                    <li><a href="#">Nóng trên mạng</a></li>
+                    <li><a href="#">Sáng kiến an toàn giao thông</a></li>
+                </ul>
+                <ul class="group-category-sub-category">
+                    <li class="category-title"><a href="#" class="text-uppercase">Xã hội</a></li>
+                    <li class="sub-category"><a href="#">Chỉnh trị</a></li>
+                    <li><a href="#">Học tập Bác</a></li>
+                    <li><a href="#">Môi trường</a></li>
+                    <li><a href="#">Giao thông</a></li>
+                    <li><a href="#">Nóng trên mạng</a></li>
+                    <li><a href="#">Sáng kiến an toàn giao thông</a></li>
+                </ul>
+                <ul class="group-category-sub-category">
+                    <li class="category-title"><a href="#" class="text-uppercase">Xã hội</a></li>
+                    <li class="sub-category"><a href="#">Chỉnh trị</a></li>
+                    <li><a href="#">Học tập Bác</a></li>
+                    <li><a href="#">Môi trường</a></li>
+                    <li><a href="#">Giao thông</a></li>
+                    <li><a href="#">Nóng trên mạng</a></li>
+                    <li><a href="#">Sáng kiến an toàn giao thông</a></li>
+                </ul>
+                <ul class="group-category-sub-category">
+                    <li class="category-title"><a href="#" class="text-uppercase">Xã hội</a></li>
+                    <li class="sub-category"><a href="#">Chỉnh trị</a></li>
+                    <li><a href="#">Học tập Bác</a></li>
+                    <li><a href="#">Môi trường</a></li>
+                    <li><a href="#">Giao thông</a></li>
+                    <li><a href="#">Nóng trên mạng</a></li>
+                    <li><a href="#">Sáng kiến an toàn giao thông</a></li>
+                </ul>
+                <ul class="group-category-sub-category">
+                    <li class="category-title"><a href="#" class="text-uppercase">Xã hội</a></li>
+                    <li class="sub-category"><a href="#">Chỉnh trị</a></li>
+                    <li><a href="#">Học tập Bác</a></li>
+                    <li><a href="#">Môi trường</a></li>
+                    <li><a href="#">Giao thông</a></li>
+                    <li><a href="#">Nóng trên mạng</a></li>
+                    <li><a href="#">Sáng kiến an toàn giao thông</a></li>
+                </ul>
+                <ul class="group-category-sub-category">
+                    <li class="category-title"><a href="#" class="text-uppercase">Xã hội</a></li>
+                    <li class="sub-category"><a href="#">Chỉnh trị</a></li>
+                    <li><a href="#">Học tập Bác</a></li>
+                    <li><a href="#">Môi trường</a></li>
+                    <li><a href="#">Giao thông</a></li>
+                    <li><a href="#">Nóng trên mạng</a></li>
+                    <li><a href="#">Sáng kiến an toàn giao thông</a></li>
+                </ul>
+                <ul class="group-category-sub-category">
+                    <li class="category-title"><a href="#" class="text-uppercase">Xã hội</a></li>
+                    <li class="sub-category"><a href="#">Chỉnh trị</a></li>
+                    <li><a href="#">Học tập Bác</a></li>
+                    <li><a href="#">Môi trường</a></li>
+                    <li><a href="#">Giao thông</a></li>
+                    <li><a href="#">Nóng trên mạng</a></li>
+                    <li><a href="#">Sáng kiến an toàn giao thông</a></li>
+                </ul>
+                <ul class="group-category-sub-category">
+                    <li class="category-title"><a href="#" class="text-uppercase">Xã hội</a></li>
+                    <li class="sub-category"><a href="#">Chỉnh trị</a></li>
+                    <li><a href="#">Học tập Bác</a></li>
+                    <li><a href="#">Môi trường</a></li>
+                    <li><a href="#">Giao thông</a></li>
+                    <li><a href="#">Nóng trên mạng</a></li>
+                    <li><a href="#">Sáng kiến an toàn giao thông</a></li>
+                </ul>
+                <ul class="group-category-sub-category">
+                    <li class="category-title"><a href="#" class="text-uppercase">Xã hội</a></li>
+                    <li class="sub-category"><a href="#">Chỉnh trị</a></li>
+                    <li><a href="#">Học tập Bác</a></li>
+                    <li><a href="#">Môi trường</a></li>
+                    <li><a href="#">Giao thông</a></li>
+                    <li><a href="#">Nóng trên mạng</a></li>
+                    <li><a href="#">Sáng kiến an toàn giao thông</a></li>
+                </ul>
+                <ul class="group-category-sub-category">
+                    <li class="category-title"><a href="#" class="text-uppercase">Xã hội</a></li>
+                    <li class="sub-category"><a href="#">Chỉnh trị</a></li>
+                    <li><a href="#">Học tập Bác</a></li>
+                    <li><a href="#">Môi trường</a></li>
+                    <li><a href="#">Giao thông</a></li>
+                    <li><a href="#">Nóng trên mạng</a></li>
+                    <li><a href="#">Sáng kiến an toàn giao thông</a></li>
+                </ul>
+                <ul class="group-category-sub-category">
+                    <li class="category-title"><a href="#" class="text-uppercase">Xã hội</a></li>
+                    <li class="sub-category"><a href="#">Chỉnh trị</a></li>
+                    <li><a href="#">Học tập Bác</a></li>
+                    <li><a href="#">Môi trường</a></li>
+                    <li><a href="#">Giao thông</a></li>
+                    <li><a href="#">Nóng trên mạng</a></li>
+                    <li><a href="#">Sáng kiến an toàn giao thông</a></li>
+                </ul>
+                <ul class="group-category-sub-category">
+                    <li class="category-title"><a href="#" class="text-uppercase">Xã hội</a></li>
+                    <li class="sub-category"><a href="#">Chỉnh trị</a></li>
+                    <li><a href="#">Học tập Bác</a></li>
+                    <li><a href="#">Môi trường</a></li>
+                    <li><a href="#">Giao thông</a></li>
+                    <li><a href="#">Nóng trên mạng</a></li>
+                    <li><a href="#">Sáng kiến an toàn giao thông</a></li>
+                </ul>
+                <ul class="group-category-sub-category">
+                    <li class="category-title"><a href="#" class="text-uppercase">Xã hội</a></li>
+                    <li class="sub-category"><a href="#">Chỉnh trị</a></li>
+                    <li><a href="#">Học tập Bác</a></li>
+                    <li><a href="#">Môi trường</a></li>
+                    <li><a href="#">Giao thông</a></li>
+                    <li><a href="#">Nóng trên mạng</a></li>
+                    <li><a href="#">Sáng kiến an toàn giao thông</a></li>
+                </ul>
+                <ul class="group-category-sub-category">
+                    <li class="category-title"><a href="#" class="text-uppercase">Xã hội</a></li>
+                    <li class="sub-category"><a href="#">Chỉnh trị</a></li>
+                    <li><a href="#">Học tập Bác</a></li>
+                    <li><a href="#">Môi trường</a></li>
+                    <li><a href="#">Giao thông</a></li>
+                    <li><a href="#">Nóng trên mạng</a></li>
+                    <li><a href="#">Sáng kiến an toàn giao thông</a></li>
+                </ul>
+                <ul class="group-category-sub-category">
+                    <li class="category-title"><a href="#" class="text-uppercase">Xã hội</a></li>
+                    <li class="sub-category"><a href="#">Chỉnh trị</a></li>
+                    <li><a href="#">Học tập Bác</a></li>
+                    <li><a href="#">Môi trường</a></li>
+                    <li><a href="#">Giao thông</a></li>
+                    <li><a href="#">Nóng trên mạng</a></li>
+                    <li><a href="#">Sáng kiến an toàn giao thông</a></li>
+                </ul>
+                <ul class="group-category-sub-category">
+                    <li class="category-title"><a href="#" class="text-uppercase">Xã hội</a></li>
+                    <li class="sub-category"><a href="#">Chỉnh trị</a></li>
+                    <li><a href="#">Học tập Bác</a></li>
+                    <li><a href="#">Môi trường</a></li>
+                    <li><a href="#">Giao thông</a></li>
+                    <li><a href="#">Nóng trên mạng</a></li>
+                    <li><a href="#">Sáng kiến an toàn giao thông</a></li>
+                </ul>
+                <ul class="group-category-sub-category">
+                    <li class="category-title"><a href="#" class="text-uppercase">Xã hội</a></li>
+                    <li class="sub-category"><a href="#">Chỉnh trị</a></li>
+                    <li><a href="#">Học tập Bác</a></li>
+                    <li><a href="#">Môi trường</a></li>
+                    <li><a href="#">Giao thông</a></li>
+                    <li><a href="#">Nóng trên mạng</a></li>
+                    <li><a href="#">Sáng kiến an toàn giao thông</a></li>
+                </ul>
+                <ul class="group-category-sub-category">
+                    <li class="category-title"><a href="#" class="text-uppercase">Xã hội</a></li>
+                    <li class="sub-category"><a href="#">Chỉnh trị</a></li>
+                    <li><a href="#">Học tập Bác</a></li>
+                    <li><a href="#">Môi trường</a></li>
+                    <li><a href="#">Giao thông</a></li>
+                    <li><a href="#">Nóng trên mạng</a></li>
+                    <li><a href="#">Sáng kiến an toàn giao thông</a></li>
+                </ul>
+                <ul class="group-category-sub-category">
+                    <li class="category-title"><a href="#" class="text-uppercase">Xã hội</a></li>
+                    <li class="sub-category"><a href="#">Chỉnh trị</a></li>
+                    <li><a href="#">Học tập Bác</a></li>
+                    <li><a href="#">Môi trường</a></li>
+                    <li><a href="#">Giao thông</a></li>
+                    <li><a href="#">Nóng trên mạng</a></li>
+                    <li><a href="#">Sáng kiến an toàn giao thông</a></li>
+                </ul>
+
+            </div>
+            <div class="all-category-right-section">
+                <div class="right-section-item">
+                    <img style="width: 100%; padding-bottom: 0.5rem;"
+                        src="https://cdnweb.dantri.com.vn/dist/static-ads-240x36.1-0-1.962e3fae7be5aac3ad73.jpg" alt="">
+                    <ul>
+                        <li><a href="#" class="text-uppercase">Sự kiện nổi bật</a></li>
+                        <li><a href="#" class="text-uppercase">Dân trí TV</a></li>
+                    </ul>
+                </div>
+                <div class="horizontal-divider"></div>
+                <div class="right-section-item">
+                    <ul>
+                        <li><a href="#">DMagazine</a></li>
+                        <li><a href="#">Infographic</a></li>
+                        <li><a href="#">Photo Story</a></li>
+                    </ul>
+                </div>
+                <div class="horizontal-divider"></div>
+                <div class="right-section-item">
+                    <ul>
+                        <li><a href="#">Nhịp sống trẻ</a></li>
+                        <li><a href="#">Khoa học</a></li>
+                        <li><a href="#">Tâm điểm</a></li>
+                        <li><a href="#">Bạn đọc</a></li>
+                    </ul>
+                </div>
+                <div class="horizontal-divider"></div>
+                <div class="right-section-item">
+                    <ul>
+                        <li><a href="#">Gửi thư cho tòa soạn</a></li>
+                        <li><a href="#">Liên hệ quảng cáo</a></li>
+                        <li class="follow">
+                            <span>Theo dõi Dân trí trên:</span>
+                            <div class="logo-social-media" style="padding-right: 1rem;">
+                                <img src="https://cdnweb.dantri.com.vn/dist/f79dca0321a473942b57.svg" alt="">
+                                <img src="https://cdnweb.dantri.com.vn/dist/add0b845165b2db1bdc0.svg" alt="">
+                                <img src="https://cdnweb.dantri.com.vn/dist/e84c1388df2f58641617.svg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end pop up all category and sub category -->
+
+        <div class="detail-container">
+            <div class="left-page-detail">
+                <div class="icon-container">
+                    <ul>
+                        <li class="link-icon icon-facebook"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li class="link-icon icon-share"><a href=""><i class="fa-solid fa-link"></i></a></li>
+                        <li class="link-icon icon-print"><a href=""><i class="fa-solid fa-print"></i></a></li>
+                    </ul>
+                    <ul class="icon-comment">
+                        <li class="link-icon"><a href="#"><i class="fa-regular fa-comment"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="center-page-detail">
+                <div class="category-name"><span>Xã hội</span> <span>></span> <span>Du học</span></div>
+                <div class="article-content">
+                    <div class="article-title">Kỷ luật 2 lãnh đạo xã để dân xây công trình "khủng" trên đất công
+                    </div>
+                    <div class="article-author">
+                        <img class="author-avatar"
+                            src="https://icdn.dantri.com.vn/zoom/32_32/2021/11/20/2574834228574040982291788951850210618725254n-crop-1637375973085.jpeg"
+                            alt="">
+                        <div class="writer-name">Thanh Tung</div>
+                        <div>•</div>
+                        <div class="created-date">Thứ tư, 23/11/2022 - 11:47</div>
+                    </div>
+                    <div class="article-audio">
+                        <div class="article-audio-container">
+                            <div class="audio-control">
+                                <div class="play-button">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="audio-time">00:00/02:22</div>
+                            </div>
+                            <div class="audio-track-bar">
+                                <div class="bar"></div>
+                            </div>
+                            <div class="audio-voice">
+                                <div class="audio-voice-icon"><i class="fa-solid fa-microphone"></i></div>
+                                <div class="audio-voice-text">Nữ miền Bắc</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-preview-content">
+                        <p>(Dân trí) - Do buông lỏng quản lý, để cho một hộ gia đình sử dụng trái phép gần 8ha đất quốc
+                            phòng và đất do xã quản lý, hai lãnh đạo xã Hà Long, huyện Hà Trung vừa bị kỷ luật khiển
+                            trách.
+                        </p>
+                    </div>
+                    <div class="article-main-content">
+                        <p>Ngày 23/11, tin từ UBND huyện Hà Trung, tỉnh Thanh Hóa, Hội đồng kỷ luật huyện này vừa họp,
+                            thực hiện trình tự kỷ luật đối với lãnh đạo UBND xã Hà Long, do có liên quan đến sai phạm để
+                            một hộ gia đình sử dụng gần 8ha đất trái phép trên địa bàn.</p>
+                        <p>Theo đó, Hội đồng kỷ luật huyện Hà Trung thống nhất kỷ luật bằng hình thức khiển trách đối
+                            với các ông Nguyễn Hữu Thành - Chủ tịch UBND xã Hà Long, và ông Hoàng Việt Dân - Phó chủ
+                            tịch UBND xã Hà Long.</p>
+                        <p>Ngày 23/11, tin từ UBND huyện Hà Trung, tỉnh Thanh Hóa, Hội đồng kỷ luật huyện này vừa họp,
+                            thực hiện trình tự kỷ luật đối với lãnh đạo UBND xã Hà Long, do có liên quan đến sai phạm để
+                            một hộ gia đình sử dụng gần 8ha đất trái phép trên địa bàn.</p>
+                        <p>Theo đó, Hội đồng kỷ luật huyện Hà Trung thống nhất kỷ luật bằng hình thức khiển trách đối
+                            với các ông Nguyễn Hữu Thành - Chủ tịch UBND xã Hà Long, và ông Hoàng Việt Dân - Phó chủ
+                            tịch UBND xã Hà Long.</p>
+                        <p>Ngày 23/11, tin từ UBND huyện Hà Trung, tỉnh Thanh Hóa, Hội đồng kỷ luật huyện này vừa họp,
+                            thực hiện trình tự kỷ luật đối với lãnh đạo UBND xã Hà Long, do có liên quan đến sai phạm để
+                            một hộ gia đình sử dụng gần 8ha đất trái phép trên địa bàn.</p>
+                        <p>Theo đó, Hội đồng kỷ luật huyện Hà Trung thống nhất kỷ luật bằng hình thức khiển trách đối
+                            với các ông Nguyễn Hữu Thành - Chủ tịch UBND xã Hà Long, và ông Hoàng Việt Dân - Phó chủ
+                            tịch UBND xã Hà Long.</p>
+                        <p>Ngày 23/11, tin từ UBND huyện Hà Trung, tỉnh Thanh Hóa, Hội đồng kỷ luật huyện này vừa họp,
+                            thực hiện trình tự kỷ luật đối với lãnh đạo UBND xã Hà Long, do có liên quan đến sai phạm để
+                            một hộ gia đình sử dụng gần 8ha đất trái phép trên địa bàn.</p>
+                        <p>Theo đó, Hội đồng kỷ luật huyện Hà Trung thống nhất kỷ luật bằng hình thức khiển trách đối
+                            với các ông Nguyễn Hữu Thành - Chủ tịch UBND xã Hà Long, và ông Hoàng Việt Dân - Phó chủ
+                            tịch UBND xã Hà Long.</p>
+                        <p>Ngày 23/11, tin từ UBND huyện Hà Trung, tỉnh Thanh Hóa, Hội đồng kỷ luật huyện này vừa họp,
+                            thực hiện trình tự kỷ luật đối với lãnh đạo UBND xã Hà Long, do có liên quan đến sai phạm để
+                            một hộ gia đình sử dụng gần 8ha đất trái phép trên địa bàn.</p>
+                        <p>Theo đó, Hội đồng kỷ luật huyện Hà Trung thống nhất kỷ luật bằng hình thức khiển trách đối
+                            với các ông Nguyễn Hữu Thành - Chủ tịch UBND xã Hà Long, và ông Hoàng Việt Dân - Phó chủ
+                            tịch UBND xã Hà Long.</p>
+                        <p>Ngày 23/11, tin từ UBND huyện Hà Trung, tỉnh Thanh Hóa, Hội đồng kỷ luật huyện này vừa họp,
+                            thực hiện trình tự kỷ luật đối với lãnh đạo UBND xã Hà Long, do có liên quan đến sai phạm để
+                            một hộ gia đình sử dụng gần 8ha đất trái phép trên địa bàn.</p>
+                        <p>Theo đó, Hội đồng kỷ luật huyện Hà Trung thống nhất kỷ luật bằng hình thức khiển trách đối
+                            với các ông Nguyễn Hữu Thành - Chủ tịch UBND xã Hà Long, và ông Hoàng Việt Dân - Phó chủ
+                            tịch UBND xã Hà Long.</p>
+                    </div>
+                </div>
+
+                <div class="article-reaction-container">
+                    <div class="article-reaction">
+                        <img class="reaction-avatar"
+                            src="https://icdn.dantri.com.vn/zoom/32_32/2021/11/20/2574834228574040982291788951850210618725254n-crop-1637375973085.jpeg"
+                            alt="">
+                        <div class="reaction-given">4 đã tặng</div>
+                        <div class="reaction-emoji">
+                            <span>1 😍</span>
+                            <span>5 ❤️</span>
+                        </div>
+                    </div>
+                    <div class="given-for-author">
+                        <div class="box">
+                            <div class="gift-icon"></div>
+                            <div class="text">Bạn đã tặng sao "Xúc động" cho tác giả</div>
+                        </div>
+                    </div>
+                    <div class="note-for-reader">
+                        Bạn đọc thấy nội dung hay hãy ấn tặng sao, tác giả sẽ thêm động lực viết bài báo khác hay hơn,
+                        cảm ơn bạn.
+                    </div>
+                </div>
+
+                <div class="related-articles">
+                    <div class="heading">
+                        Tin liên quan
+                    </div>
+                    <div class="more-article-left-item">
+                        <div class="image-section-more-article">
+                            <img src="https://icdn.dantri.com.vn/zoom/233_155/2022/11/03/le-thanh-van-1667455970758.jpeg"
+                                alt="">
+                        </div>
+                        <div class="title-section-more-article">
+                            <a href="#" class="sub-article-title">
+                                Thu hồi đất "bồi thường một giá rất rẻ", sau tăng giá gấp hàng trăm lần
+                            </a>
+                            <p class="text-blur-color">Đại biểu Quốc hội Lê Thanh Vân cho rằng việc xác định giá đất
+                                hiện
+                                nay còn mang tính chủ quan, đôi khi áp đặt. Đại tướng Lương Cường nói xác định giá đất
+                                là
+                                vấn để nổi lên nhất hiện nay.</p>
+                        </div>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="more-article-left-item">
+                        <div class="image-section-more-article">
+                            <img src="https://icdn.dantri.com.vn/zoom/233_155/2022/11/03/le-thanh-van-1667455970758.jpeg"
+                                alt="">
+                        </div>
+                        <div class="title-section-more-article">
+                            <a href="#" class="sub-article-title">
+                                Thu hồi đất "bồi thường một giá rất rẻ", sau tăng giá gấp hàng trăm lần
+                            </a>
+                            <p class="text-blur-color">Đại biểu Quốc hội Lê Thanh Vân cho rằng việc xác định giá đất
+                                hiện
+                                nay còn mang tính chủ quan, đôi khi áp đặt. Đại tướng Lương Cường nói xác định giá đất
+                                là
+                                vấn để nổi lên nhất hiện nay.</p>
+                        </div>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                </div>
+
+                <div class="related-articles">
+                    <div class="heading">
+                        Đang được quan tâm
+                    </div>
+                    <div class="more-article-left-item">
+                        <div class="image-section-more-article">
+                            <img src="https://icdn.dantri.com.vn/zoom/233_155/2022/11/03/le-thanh-van-1667455970758.jpeg"
+                                alt="">
+                        </div>
+                        <div class="title-section-more-article">
+                            <a href="#" class="sub-article-title">
+                                Thu hồi đất "bồi thường một giá rất rẻ", sau tăng giá gấp hàng trăm lần
+                            </a>
+                            <p class="text-blur-color">Đại biểu Quốc hội Lê Thanh Vân cho rằng việc xác định giá đất
+                                hiện
+                                nay còn mang tính chủ quan, đôi khi áp đặt. Đại tướng Lương Cường nói xác định giá đất
+                                là
+                                vấn để nổi lên nhất hiện nay.</p>
+                        </div>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="more-article-left-item">
+                        <div class="image-section-more-article">
+                            <img src="https://icdn.dantri.com.vn/zoom/233_155/2022/11/03/le-thanh-van-1667455970758.jpeg"
+                                alt="">
+                        </div>
+                        <div class="title-section-more-article">
+                            <a href="#" class="sub-article-title">
+                                Thu hồi đất "bồi thường một giá rất rẻ", sau tăng giá gấp hàng trăm lần
+                            </a>
+                            <p class="text-blur-color">Đại biểu Quốc hội Lê Thanh Vân cho rằng việc xác định giá đất
+                                hiện
+                                nay còn mang tính chủ quan, đôi khi áp đặt. Đại tướng Lương Cường nói xác định giá đất
+                                là
+                                vấn để nổi lên nhất hiện nay.</p>
+                        </div>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                </div>
+            </div>
+
+            <div class="right-page-detail">
+                <div class="most-read">
+                    Đọc nhiều trong <span>Du hoc</span>
+                </div>
+                <ul>
+                    <li>
+                        <div class="left-article-item">
+                            <img src="https://icdn.dantri.com.vn/zoom/234_156/2022/11/03/z3850470191963a028f8dcc653b066d5cea52140c89731-1667438250466.jpg"
+                                alt="">
+                            <div style="display: flex; justify-content: space-between;">
+                                <div class="number-order" style="padding-right: 0.5rem;">1.</div>
+                                <a href="#" class="sub-article-title">Hà Nội dừng hoạt động giao dịch với hơn 760 pháp
+                                    nhân
+                                    liên
+                                    quan vụ án Vạn Thịnh Phát</a>
+                            </div>
+                        </div>
+                        <div class="horizontal-divider"></div>
+                    </li>
+                    <li>
+                        <div class="right-article-item">
+                            <div class="title-section title-section-most-read">
+                                <div class="number-order">1.</div>
+                                <a href="#" class="sub-article-title">Ukraine tìm được vũ khí bắt bài
+                                    chiến thuật tập kích UAV ồ ạt
+                                    của Nga</a>
+                            </div>
+                            <div class="image-section">
+                                <img src="https://icdn.dantri.com.vn/zoom/120_80/2022/10/21/uav-crop-1666339321211.jpeg"
+                                    alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="horizontal-divider"></div>
+                        <div class="right-article-item">
+                            <div class="title-section title-section-most-read">
+                                <div class="number-order">1.</div>
+                                <a href="#" class="sub-article-title">Ukraine tìm được vũ khí bắt bài
+                                    chiến thuật tập kích UAV ồ ạt
+                                    của Nga</a>
+                            </div>
+                            <div class="image-section">
+                                <img src="https://icdn.dantri.com.vn/zoom/120_80/2022/10/21/uav-crop-1666339321211.jpeg"
+                                    alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="horizontal-divider"></div>
+                        <div class="right-article-item">
+                            <div class="title-section title-section-most-read">
+                                <div class="number-order">1.</div>
+                                <a href="#" class="sub-article-title">Ukraine tìm được vũ khí bắt bài
+                                    chiến thuật tập kích UAV ồ ạt
+                                    của Nga</a>
+                            </div>
+                            <div class="image-section">
+                                <img src="https://icdn.dantri.com.vn/zoom/120_80/2022/10/21/uav-crop-1666339321211.jpeg"
+                                    alt="">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="horizontal-footer-divider"></div>
+            <div class="footer-logo">
+                <img src="https://cdnweb.dantri.com.vn/dist/static-logo.1-0-1.329fb29fe0ea34cca545.svg" alt="">
+            </div>
+            <div class="footer-main-content">
+                <div class="footer-content-left">
+                    <ul>
+                        <li>Cơ quan của Bộ Lao động - Thương binh và Xã hội</li>
+                        <li>Tổng biên tập: Phạm Tuấn Anh</li>
+                        <li>Giấy phép hoạt động báo điện tử Dân trí số 298/GP - BTTTT Hà Nội, ngày 14-07-2020.</li>
+                        <li>Địa chỉ tòa soạn: Nhà 48, ngõ 2 Giảng Võ, Cát Linh, Đống Đa, Hà Nội</li>
+                        <li>Văn phòng đại diện miền Nam: 51 Võ Văn Tần, Phường Võ Thị Sáu, Quận 3, TP.HCM</li>
+                        <li>Điện thoại: 024-3736-6491. Fax: 024-3736-6491</li>
+                        <li>Hotline HN: 0973-567-567. Hotline TP HCM: 0974-567-567</li>
+                        <li><a href="#" style="color: #000">Email: info@dantri.com.vn</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content-middle">
+                    <ul>
+                        <li>Liên hệ quảng cáo: 0945.54.03.03</li>
+                        <li><a href="#" style="color: #000">Email: quangcao@dantri.com.vn</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content-right">
+                    <ul>
+                        <li>Đọc báo Dân trí trên mobile:</li>
+                        <li class="download">
+                            <img src="https://cdnweb.dantri.com.vn/dist/ee6bf097e303486d2a1c.png" alt="">
+                            <img src="https://cdnweb.dantri.com.vn/dist/25695d60eaeb16411962.png" alt="">
+                        </li>
+                        <li class="follow">
+                            <span>Theo dõi Dân trí trên:</span>
+                            <div class="logo-social-media">
+                                <img src="https://cdnweb.dantri.com.vn/dist/f79dca0321a473942b57.svg" alt="">
+                                <img src="https://cdnweb.dantri.com.vn/dist/add0b845165b2db1bdc0.svg" alt="">
+                                <img src="https://cdnweb.dantri.com.vn/dist/e84c1388df2f58641617.svg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-end">
+                © 2005-2022 Bản quyền thuộc về Báo điện tử Dân trí. Cấm sao chép dưới mọi hình thức nếu không có sự
+                chấp thuận bằng văn bản.
+            </div>
+        </footer>
+        <!-- end footer -->
+
+        <!-- scroll to top -->
+        <div class="scroll-top">
+            <i class="arrow-scroll-top fa-solid fa-angle-up"></i>
+        </div>
+        <!-- end scroll to top -->
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
