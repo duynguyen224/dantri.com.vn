@@ -194,20 +194,157 @@
     font-weight: 600;
     font-size: 1.1rem;
 }
-.article-reaction .reaction-emoji span{
+.article-reaction .reaction-emoji span {
     padding: 0.5rem;
     background-color: rgb(240, 240, 240);
     border-radius: 30px;
     margin-right: 0.5rem;
     font-size: 1.2rem;
 }
-.given-for-author{
+.gift-for-author {
     box-shadow: 3px 3px 3px #e7e7e7;
     width: fit-content;
     border-radius: 1rem;
     border: 1px solid var(--text-blur-color);
 }
-.given-for-author .box{
+.gift-for-author .box {
     padding: 0.8rem;
 }
+.gift-for-author i {
+    color: orange;
+    font-size: 1.5rem;
+    padding-right: 0.8rem;
+}
+.gift-for-author .text span {
+    font-weight: 650;
+    font-size: 1.1rem;
+}
+.note-for-reader {
+    color: var(--text-blur-color);
+    width: fit-content;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
 /* end of reaction */
+
+/* related article */
+.related-articles-container {
+    border: 1px solid #eee;
+}
+.related-articles {
+    padding: 1.5rem;
+}
+.related-articles .heading {
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+.related-articles .articles-container {
+    margin-top: 1.5rem;
+}
+/* end related article */
+
+/* tags */
+.tag-container {
+    padding: 2rem 0 2rem 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    gap: 2rem;
+}
+.tag-container .text {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.tag-container .tags {
+}
+.tag-container .tags ul {
+    display: flex;
+    gap: 1rem;
+}
+.tag-container .tags li a {
+    font-size: 1.1rem;
+    padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+    border: 1px solid #eee;
+    border-radius: 5rem;
+    background-color: var(--color-audio-background);
+}
+.tag-container .tags li:hover a {
+    background-color: var(--color-green-dan-tri);
+    color: #fff;
+}
+/* end tags */
+
+/* being interested articles */
+.being-interested-container {
+    border-top: 2px solid var(--color-green-dan-tri);
+    padding-top: 1rem;
+}
+.being-interested {
+}
+.being-interested .text {
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.being-interested .articles-container {
+    margin-top: 1rem;
+}
+/* end being interested articles */
+
+/* comment */
+.comment-section{
+    border: 1px solid #eee;
+    margin-bottom: 2rem;
+}
+.comment-section .comment-container{
+    padding: 1.5rem;
+}
+.comment-container .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.comment-section .comment-container .left i, .comment-count{
+    font-size: 1.8rem;
+}
+.comment-container .left i{
+    color: var(--color-green-dan-tri);
+    padding-right: 0.5rem;
+}
+.comment-container .top .right span{
+    font-size: 1.1rem;
+}
+.comment-container .top .right a{
+    font-size: 1.1rem;
+    color: #0026ff;
+    font-weight: 600;
+}
+.comment-textbox textarea{
+    background-color: var(--color-audio-background);
+}
+.bottom{
+    padding-top: 1rem;
+}
+.bottom .send-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom .send-box .text{
+    color: var(--text-blur-color);
+}
+.bottom .send-box .button-send{
+    text-align: right;
+}
+.bottom .send-box .button-send a{
+    background-color: rgba(0, 163, 0, 0.733);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-weight: 600;
+}
+/* end comment */
