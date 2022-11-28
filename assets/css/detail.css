@@ -295,56 +295,131 @@
 /* end being interested articles */
 
 /* comment */
-.comment-section{
+.comment-section {
     border: 1px solid #eee;
     margin-bottom: 2rem;
 }
-.comment-section .comment-container{
+.comment-section .comment-container {
     padding: 1.5rem;
 }
-.comment-container .top{
+.comment-container .top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 1rem;
 }
-.comment-section .comment-container .left i, .comment-count{
+.comment-section .comment-container .left i,
+.comment-count {
     font-size: 1.8rem;
 }
-.comment-container .left i{
+.comment-container .left i {
     color: var(--color-green-dan-tri);
     padding-right: 0.5rem;
 }
-.comment-container .top .right span{
+.comment-container .top .right span {
     font-size: 1.1rem;
 }
-.comment-container .top .right a{
+.comment-container .top .right a {
     font-size: 1.1rem;
     color: #0026ff;
     font-weight: 600;
 }
-.comment-textbox textarea{
+.comment-textbox textarea {
     background-color: var(--color-audio-background);
 }
-.bottom{
+.bottom {
     padding-top: 1rem;
 }
-.bottom .send-box{
+.bottom .send-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.bottom .send-box .text{
+.bottom .send-box .text {
     color: var(--text-blur-color);
 }
-.bottom .send-box .button-send{
+.bottom .send-box .button-send {
     text-align: right;
 }
-.bottom .send-box .button-send a{
+.bottom .send-box .button-send a {
     background-color: rgba(0, 163, 0, 0.733);
     padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 0.5rem;
     color: #fff;
     font-weight: 600;
+}
+.no-comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.no-comment > div > i {
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+}
+.no-comment > div {
+    color: var(--text-blur-color);
+}
+.user-comments{
+    margin-top: 1rem;
+}
+.user-comments .single-comment{
+    display: flex;
+    gap: 0.5rem;
+}
+.user-comments .single-comment .left {
+    width: 5%;
+}
+.user-comments .single-comment .left .avatar {
+    border-radius: 50%;
+    width: 3rem;
+}
+.user-comments .single-comment .right {
+    width: 92%;
+}
+.right > .info > .username{
+    font-weight: 600;
+}
+.right > .info > .date{
+    color: var(--text-blur-color);
+}
+.right > .content{
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+.right > .like-reply > span{
+    cursor: pointer;
+}
+.right > .like-reply .count-like{
+    font-weight: bold;
+}
+.right .more-reply{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 0.6rem;
+}
+.right .more-reply .more-reply-expand{
+    cursor: pointer;
+    color: rgb(38, 73, 231);
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+.right .show-more-reply{
+    margin-top: 1.2rem;
+}
+.see-more-comment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(38, 73, 231);
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: underline;
+    padding-top: 3rem;
 }
 /* end comment */
